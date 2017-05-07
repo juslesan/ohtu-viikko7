@@ -1,11 +1,11 @@
 package ohtu.kivipaperisakset.tekoaly;
 
-public class HelppoTekoaly implements Tekoaly{
+public class HuonompiTekoaly implements Tekoaly{
 
     int siirto;
     private final String[] siirrot = {"k", "p", "s"};
 
-    public HelppoTekoaly() {
+    public HuonompiTekoaly() {
         siirto = 0;
     }
 

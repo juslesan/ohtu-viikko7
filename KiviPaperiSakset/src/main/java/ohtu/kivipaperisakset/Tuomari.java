@@ -1,7 +1,6 @@
 package ohtu.kivipaperisakset;
 
 // Tuomari pitää kirjaa ensimmäisen ja toisen pelaajan pisteistä sekä tasapelien määrästä.
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,14 +9,14 @@ public class Tuomari {
     private int ekanPisteet;
     private int tokanPisteet;
     private int tasapelit;
-    
-    private final Map<String,String> voittajat;
+
+    private final Map<String, String> voittajat;
 
     public Tuomari() {
         this.ekanPisteet = 0;
         this.tokanPisteet = 0;
         this.tasapelit = 0;
-        
+
         voittajat = new HashMap<>();
         voittajat.put("k", "s");
         voittajat.put("s", "p");

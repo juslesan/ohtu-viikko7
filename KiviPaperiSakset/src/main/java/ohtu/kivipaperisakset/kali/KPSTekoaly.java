@@ -1,4 +1,4 @@
-package ohtu.kivipaperisakset.ui;
+package ohtu.kivipaperisakset.kali;
 
 import ohtu.kivipaperisakset.tekoaly.Tekoaly;
 

@@ -1,22 +1,22 @@
 package ohtu.kivipaperisakset;
 
-import ohtu.kivipaperisakset.tekoaly.HelppoTekoaly;
-import ohtu.kivipaperisakset.tekoaly.VaikeaTekoaly;
-import ohtu.kivipaperisakset.ui.KPS;
-import ohtu.kivipaperisakset.ui.KPSPelaajaVsPelaaja;
-import ohtu.kivipaperisakset.ui.KPSTekoaly;
+import ohtu.kivipaperisakset.tekoaly.HuonompiTekoaly;
+import ohtu.kivipaperisakset.tekoaly.ParempiTekoaly;
+import ohtu.kivipaperisakset.kali.KPS;
+import ohtu.kivipaperisakset.kali.KPSPelaajaVsPelaaja;
+import ohtu.kivipaperisakset.kali.KPSTekoaly;
 
 public class KPSFactory {
-    
-    public static KPS pelaajaVsPelaaja(){
+
+    public static KPS pelaajaVsPelaaja() {
         return new KPSPelaajaVsPelaaja();
     }
-    
-    public static KPS pelaajaVsHelppoAI(){
-        return new KPSTekoaly(new HelppoTekoaly());
+
+    public static KPS pelaajaVsHelppoAI() {
+        return new KPSTekoaly(new HuonompiTekoaly());
     }
-    
-    public static KPS pelaajaVsVaikeaAI(){
-        return new KPSTekoaly(new VaikeaTekoaly(20));
+
+    public static KPS pelaajaVsVaikeaAI() {
+        return new KPSTekoaly(new ParempiTekoaly(20));
     }
 }

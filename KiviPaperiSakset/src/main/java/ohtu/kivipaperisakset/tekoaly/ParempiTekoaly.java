@@ -3,11 +3,11 @@ package ohtu.kivipaperisakset.tekoaly;
 
 // "Muistava tekoäly"
 
-public class VaikeaTekoaly implements Tekoaly{
+public class ParempiTekoaly implements Tekoaly{
   private String[] muisti;
   private int vapaaMuistiIndeksi;
 
-  public VaikeaTekoaly(int muistinKoko) {
+  public ParempiTekoaly(int muistinKoko) {
     muisti = new String[muistinKoko];
     vapaaMuistiIndeksi = 0;
   }
@@ -57,11 +57,6 @@ public class VaikeaTekoaly implements Tekoaly{
       }
     }
     
-    
-    // Tehdään siirron valinta esimerkiksi seuraavasti;
-    // - jos kiviä eniten, annetaan aina paperi
-    // - jos papereita eniten, annetaan aina sakset
-    // muulloin annetaan aina kivi
     if(k > p && k > s) {
       return "p";
     }
@@ -71,8 +66,5 @@ public class VaikeaTekoaly implements Tekoaly{
     else {
       return "k";
     }
-    
-    // Tehokkaampiakin tapoja löytyy, mutta niistä lisää 
-    // Johdatus Tekoälyyn kurssilla!
   }
 }

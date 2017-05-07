@@ -1,4 +1,4 @@
-package ohtu.kivipaperisakset.ui;
+package ohtu.kivipaperisakset.kali;
 
 public class KPSPelaajaVsPelaaja extends KPS{
 
